@@ -50,7 +50,7 @@ def main():
     password = config.SEND_EMAIL_HOST_PASSWORD
     receivers = [config.RECEIVE_EMAIL_HOST_USER]
     subject = "test"
-    parser = OptionParser()
+    parser = OptionParser(add_help_option=True)
     parser.add_option("-H", "--host", dest="host", default=host, type="str",
                       help="host of the sender")
     parser.add_option("-P", "--port", dest="port", default=port, type="int",

@@ -123,7 +123,7 @@ def main():
     receiver = config.RECEIVE_EMAIL_HOST_USER
     number = "1"
     kwargs = {}
-    parser = OptionParser()
+    parser = OptionParser(add_help_option=True)
     parser.add_option("-H", "--host", dest="host", default=host, type="str",
                       help="host of the receiver")
     parser.add_option("-P", "--port", dest="port", default=port, type="int",
