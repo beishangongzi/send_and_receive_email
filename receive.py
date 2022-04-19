@@ -36,7 +36,7 @@ def get_att(msg, **kwargs):
                 filename = decode_str(str(filename, dh[0][1]))  # 将附件名称可读化
             data = part.get_payload(decode=True)  # 下载附件
             try:
-                destination = os.path.join(kwargs["destination"], "att_" + file_name)
+                destination = os.path.join(kwargs["destination"], file_name)
             except:
                 destination = os.path.join(sender, date, "att_" + file_name)
             att_file = open(destination, 'wb')  # 在指定目录下创建文件，注意二进制文件需要用wb模式打开
