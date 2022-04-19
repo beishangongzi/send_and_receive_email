@@ -2,15 +2,12 @@
 # reference:
 import logging
 import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from email.header import Header
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from optparse import OptionParser
-from pprint import pprint
 
-import config3
-from config3 import *
-
+import config
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)

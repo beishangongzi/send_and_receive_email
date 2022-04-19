@@ -9,7 +9,7 @@ from email.header import decode_header
 from email.parser import Parser
 from optparse import OptionParser
 
-import config3
+import config
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
